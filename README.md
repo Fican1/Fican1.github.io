@@ -4,7 +4,7 @@ Personal academic website for Jintao Li (李锦韬), PhD researcher at the Shenz
 
 ## Content
 
-- Research focus: multi-objective LLM post-training, analog circuit design automation, and optimization/knowledge transfer
+- Research focus: intelligent optimization and decision-making, with applications in analog EDA and large-model post-training
 - Selected and complete publication lists
 - Analog-IC EDA software stack and self-evolving circuit-design agent projects
 - Honors, education, research experience, public contact information, and downloadable CV

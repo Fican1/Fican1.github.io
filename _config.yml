@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Jintao Li | AI for Analog EDA"
-description              : "PhD researcher building reinforcement-learning and optimization systems for robust analog circuit design and large-model post-training."
+title                    : "Jintao Li | Intelligent Optimization"
+description              : "PhD researcher studying intelligent optimization for complex decision problems, with applications in analog EDA and large-model post-training."
 url                      : "https://fican1.github.io"
 baseurl                  : ""
 repository               : "Fican1/Fican1.github.io"
@@ -27,7 +27,7 @@ author:
   name             : "Jintao Li / 李锦韬"
   initials         : "JL"
   avatar           : "images/profile.png"
-  bio              : "PhD Researcher · UESTC (Shenzhen)"
+  bio              : "PhD Researcher · Intelligent Optimization and Decision-Making"
   location         : "Shenzhen, China"
   employer         : "Shenzhen Institute for Advanced Study, UESTC"
   pubmed           : 

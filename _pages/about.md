@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: ""
-excerpt: "Jintao Li is a PhD researcher at UESTC working on reinforcement learning, optimization, analog electronic design automation, and large-model post-training."
+excerpt: "Jintao Li is a PhD researcher at UESTC studying intelligent optimization for analog EDA and large-model post-training."
 author_profile: true
 redirect_from:
   - /about/
@@ -11,9 +11,9 @@ redirect_from:
 <span class="anchor" id="about-me"></span>
 
 <section class="research-hero">
-  <p class="eyebrow">PhD Researcher · AI for Electronic Design Automation</p>
-  <h1>Building learning systems that design robust analog circuits.</h1>
-  <p class="lead">I am Jintao Li (李锦韬), a PhD researcher at the Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China. My work connects reinforcement learning, evolutionary optimization, circuit representation learning, and large-model post-training to make complex engineering design faster, more reliable, and more autonomous.</p>
+  <p class="eyebrow">PhD Researcher · Intelligent Optimization</p>
+  <h1>Intelligent optimization for engineering design and AI.</h1>
+  <p class="lead">I am Jintao Li (李锦韬), a PhD researcher at the Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China. I study intelligent optimization for complex decision problems. My work draws on reinforcement learning and evolutionary computation, with an emphasis on multi-objective and constrained optimization.</p>
   <div class="hero-actions">
     <a class="hero-button primary" href="mailto:j.t.li@i4ai.org">Start a conversation</a>
     <a class="hero-button" href="{{ '/files/Jintao_Li_CV.pdf' | relative_url }}">Download CV</a>
@@ -23,11 +23,11 @@ redirect_from:
   <div class="hero-metrics" aria-label="Selected research highlights">
     <div class="hero-metric"><strong>10</strong><span>selected publications</span></div>
     <div class="hero-metric"><strong>4</strong><span>tapeout validations</span></div>
-    <div class="hero-metric"><strong>3</strong><span>connected research threads</span></div>
+    <div class="hero-metric"><strong>2</strong><span>application domains</span></div>
   </div>
 </section>
 
-<p class="intro-note">I work with Prof. Yun Li's group at UESTC. I am especially interested in methods that transfer across circuit topologies and technology nodes, satisfy multiple hard constraints, and retain useful engineering knowledge over repeated design cycles.</p>
+<p class="intro-note">I work with Prof. Yun Li's group at UESTC. I study how learning can guide search in expensive problems with competing objectives and hard constraints. I apply these methods to analog electronic design automation and large-model post-training.</p>
 
 <span class="anchor" id="research"></span>
 
@@ -36,18 +36,18 @@ redirect_from:
 <div class="focus-grid">
   <article class="focus-card">
     <span class="focus-number">01</span>
-    <h3>Multi-objective LLM post-training</h3>
-    <p>Preference modeling, constrained policy optimization, Pareto-front improvement, and controllable alignment for models that must balance task performance, safety, and domain adaptation.</p>
+    <h3>Intelligent optimization</h3>
+    <p>Learning-based search for expensive decision problems with competing objectives and hard constraints, using reinforcement learning and evolutionary computation.</p>
   </article>
   <article class="focus-card">
     <span class="focus-number">02</span>
-    <h3>Analog circuit design automation</h3>
-    <p>Reinforcement learning and graph-based methods for parameter sizing, behavioral representation, PVT-robust design, and end-to-end integration with industrial EDA flows.</p>
+    <h3>Analog electronic design automation</h3>
+    <p>Applying intelligent optimization to circuit sizing, behavior-centric representation, PVT-robust design, and end-to-end integration with industrial EDA flows.</p>
   </article>
   <article class="focus-card">
     <span class="focus-number">03</span>
-    <h3>Optimization and knowledge transfer</h3>
-    <p>Evolutionary computation, multitask optimization, and transferable design knowledge that improve sample efficiency across circuits, processes, and operating conditions.</p>
+    <h3>Large-model post-training</h3>
+    <p>Comparison feedback, preference optimization, Pareto-front improvement, and constrained policy learning for models that must balance multiple competing objectives.</p>
   </article>
 </div>
 
@@ -178,14 +178,14 @@ redirect_from:
 
 <div class="timeline">
   <div class="timeline-item"><div class="timeline-date">2024.09–2027.06</div><div><h3>PhD Researcher</h3><p>Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China. Expected completion: June 2027.</p></div></div>
-  <div class="timeline-item"><div class="timeline-date">2021.09–Present</div><div><h3>Prof. Yun Li's Research Group</h3><p>Research on intelligent computing, reinforcement learning, analog IC/EDA optimization, PVT robustness, and industrial applications of large-model fine-tuning.</p></div></div>
+  <div class="timeline-item"><div class="timeline-date">2021.09–Present</div><div><h3>Prof. Yun Li's Research Group</h3><p>Research on intelligent optimization, especially reinforcement learning and evolutionary methods for multi-objective problems, with applications in analog EDA and large-model post-training.</p></div></div>
   <div class="timeline-item"><div class="timeline-date">2021.09–2024.06</div><div><h3>MEng in Electronic Information</h3><p>Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China.</p></div></div>
   <div class="timeline-item"><div class="timeline-date">2017.09–2021.06</div><div><h3>BEng in Optoelectronic Information Science and Engineering</h3><p>Guangzhou University.</p></div></div>
 </div>
 
 <section class="contact-panel">
   <h2>Research conversations are welcome.</h2>
-  <p>I am open to discussions around reinforcement learning, analog EDA, robust circuit optimization, research software, and collaborative work at the intersection of AI and engineering design. Reach me at <a href="mailto:j.t.li@i4ai.org">j.t.li@i4ai.org</a>.</p>
+  <p>I am open to discussions around intelligent optimization, reinforcement learning, multi-objective decision-making, analog EDA, large-model post-training, and collaborative work at the intersection of AI and engineering design. Reach me at <a href="mailto:j.t.li@i4ai.org">j.t.li@i4ai.org</a>.</p>
 </section>
 
 <p class="site-note">Based on the open-source AcadHomepage template. Research information last updated July 2026.</p>
