@@ -1,6 +1,8 @@
 ---
 permalink: /
 title: ""
+lang: en
+seo_title: "Jintao Li | Intelligent Optimization"
 excerpt: "Jintao Li is a Ph.D. student at UESTC working on intelligent optimization for analog EDA and LLM post-training."
 author_profile: true
 redirect_from:

@@ -59,6 +59,23 @@ a {
   color: #17776c;
 }
 
+.language-switch a {
+  border: 1px solid #b9d9d4;
+  border-radius: 999px;
+  color: #116b62;
+}
+
+.language-switch a:hover {
+  background: #eaf8f5;
+}
+
+html[lang="zh-CN"] .research-hero h1 {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
 #main {
   max-width: 1280px;
   padding-top: 2.4rem;

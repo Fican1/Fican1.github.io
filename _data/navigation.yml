@@ -20,3 +20,25 @@ main:
 
   - title: "CV"
     url: "/files/Jintao_Li_CV.pdf"
+
+main_zh:
+  - title: "关于"
+    url: "/zh/#about-me"
+
+  - title: "研究"
+    url: "/zh/#research"
+
+  - title: "项目"
+    url: "/zh/#projects"
+
+  - title: "论文"
+    url: "/zh/#publications"
+
+  - title: "荣誉"
+    url: "/zh/#honors"
+
+  - title: "教育"
+    url: "/zh/#education"
+
+  - title: "简历"
+    url: "/files/Jintao_Li_CV.pdf"

@@ -8,6 +8,7 @@
 # Site Settings
 title                    : "Jintao Li | Intelligent Optimization"
 description              : "Ph.D. student at UESTC working on intelligent optimization for analog EDA and LLM post-training."
+description_zh           : "电子科技大学博士研究生，研究方向为智能优化、模拟集成电路 EDA 与大模型后训练。"
 url                      : "https://fican1.github.io"
 baseurl                  : ""
 repository               : "Fican1/Fican1.github.io"
@@ -28,8 +29,11 @@ author:
   initials         : "JL"
   avatar           : "images/profile.png"
   bio              : "Ph.D. Student at UESTC"
+  bio_zh           : "电子科技大学博士研究生"
   location         : "Shenzhen, China"
+  location_zh      : "中国深圳"
   employer         : "Shenzhen Institute for Advanced Study, UESTC"
+  employer_zh      : "电子科技大学（深圳）高等研究院"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?view_op=new_articles&hl=zh-CN&imq=jintaoli#"
   email            : "j.t.li@i4ai.org"
