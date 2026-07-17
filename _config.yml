@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Jintao Li | Intelligent Optimization"
-description              : "PhD researcher studying intelligent optimization for complex decision problems, with applications in analog EDA and large-model post-training."
+description              : "Ph.D. student at UESTC working on intelligent optimization for analog EDA and LLM post-training."
 url                      : "https://fican1.github.io"
 baseurl                  : ""
 repository               : "Fican1/Fican1.github.io"
@@ -27,7 +27,7 @@ author:
   name             : "Jintao Li / 李锦韬"
   initials         : "JL"
   avatar           : "images/profile.png"
-  bio              : "PhD Researcher · Intelligent Optimization and Decision-Making"
+  bio              : "Ph.D. Student at UESTC"
   location         : "Shenzhen, China"
   employer         : "Shenzhen Institute for Advanced Study, UESTC"
   pubmed           : 

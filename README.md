@@ -1,10 +1,10 @@
-# Jintao Li — Academic Homepage
+# Jintao Li - Academic Homepage
 
-Personal academic website for Jintao Li (李锦韬), PhD researcher at the Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China.
+Personal academic website for Jintao Li (李锦韬), a Ph.D. student at the Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China.
 
 ## Content
 
-- Research focus: intelligent optimization and decision-making, with applications in analog EDA and large-model post-training
+- Research focus: intelligent optimization, with applications in analog EDA and LLM post-training
 - Selected and complete publication lists
 - Analog-IC EDA software stack and self-evolving circuit-design agent projects
 - Honors, education, research experience, public contact information, and downloadable CV
@@ -13,7 +13,7 @@ Personal academic website for Jintao Li (李锦韬), PhD researcher at the Shenz
 
 The included GitHub Actions workflow builds the Jekyll site and deploys it to GitHub Pages on every push to `main`. For a personal site, name the GitHub repository `<username>.github.io`; the published address will be `https://<username>.github.io`.
 
-Google Scholar citation crawling is intentionally manual until the public Scholar profile ID is confirmed. To enable it, add a `GOOGLE_SCHOLAR_ID` repository secret and run the “Get Citation Data” workflow.
+Google Scholar citation crawling is intentionally manual until the public Scholar profile ID is confirmed. To enable it, add a `GOOGLE_SCHOLAR_ID` repository secret and run the `Get Citation Data` workflow.
 
 ## Template and license
 
