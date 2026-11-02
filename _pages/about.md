@@ -5,6 +5,7 @@ lang: en
 seo_title: "Jintao Li | Intelligent Optimization"
 excerpt: "Jintao Li is a Ph.D. student at UESTC working on intelligent optimization for analog EDA and LLM post-training."
 author_profile: true
+layout_showcase: true
 redirect_from:
   - /about/
   - /about.html
@@ -12,9 +13,9 @@ redirect_from:
 
 <span class="anchor" id="about-me"></span>
 
-<section class="research-hero">
+<section class="research-hero research-hero--compact">
   <p class="eyebrow">Ph.D. Student at UESTC</p>
-  <h1>Intelligent optimization for analog EDA and LLM post-training.</h1>
+  <h2>Intelligent optimization for analog EDA and LLM post-training.</h2>
   <p class="lead">I am Jintao Li (李锦韬), a Ph.D. student at the Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China (UESTC). My research focuses on reinforcement learning and evolutionary methods for multi-objective and constrained optimization.</p>
   <div class="hero-actions">
     <a class="hero-button primary" href="mailto:j.t.li@i4ai.org">Email</a>
@@ -146,6 +147,8 @@ redirect_from:
 <span class="anchor" id="projects"></span>
 
 # Research systems
+
+{% include layout-explorer.html %}
 
 <div class="project-stack">
   <article class="project-card">

@@ -5,13 +5,14 @@ lang: zh
 seo_title: "李锦韬 | 智能优化"
 excerpt: "李锦韬，电子科技大学博士研究生，研究方向为智能优化、模拟集成电路 EDA 与大模型后训练。"
 author_profile: true
+layout_showcase: true
 ---
 
 <span class="anchor" id="about-me"></span>
 
-<section class="research-hero">
+<section class="research-hero research-hero--compact">
   <p class="eyebrow">电子科技大学博士研究生</p>
-  <h1>面向模拟 EDA 与大模型后训练的智能优化研究</h1>
+  <h2>面向模拟 EDA 与大模型后训练的智能优化研究</h2>
   <p class="lead">我是李锦韬，现为电子科技大学（深圳）高等研究院博士研究生。我的研究聚焦强化学习与进化计算，重点关注多目标、强约束和昂贵评估条件下的优化问题。</p>
   <div class="hero-actions">
     <a class="hero-button primary" href="mailto:j.t.li@i4ai.org">邮件联系</a>
@@ -143,6 +144,8 @@ author_profile: true
 <span class="anchor" id="projects"></span>
 
 # 科研系统
+
+{% include layout-explorer.html %}
 
 <div class="project-stack">
   <article class="project-card">

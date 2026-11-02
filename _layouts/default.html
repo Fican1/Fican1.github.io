@@ -14,6 +14,8 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
+    {% if page.layout_showcase %}{% include layout-landing.html %}{% endif %}
+
     <div id="main" role="main">
       {% include sidebar.html %}
     

@@ -1,0 +1,26 @@
+{% assign layout_zh = false %}{% if page.lang == 'zh' %}{% assign layout_zh = true %}{% endif %}
+<section class="layout-landing" id="home" aria-labelledby="landing-title">
+  <div class="layout-landing__copy">
+    <p class="layout-eyebrow">JINTAO LI <span aria-hidden="true">/</span> {% if layout_zh %}电子科技大学博士研究生{% else %}Ph.D. researcher at UESTC{% endif %}</p>
+    <h1 id="landing-title">{% if layout_zh %}智能优化，<br>从算法到电路。{% else %}Intelligent optimization.<br>From algorithms to circuits.{% endif %}</h1>
+    <p class="layout-landing__intro">{% if layout_zh %}我是李锦韬，研究强化学习与进化计算，面向模拟集成电路 EDA 和大模型后训练中的多目标与约束优化问题。{% else %}I am Jintao Li. I study reinforcement learning and evolutionary computation for multi-objective and constrained optimization in analog EDA and LLM post-training.{% endif %}</p>
+    <div class="layout-landing__actions">
+      <a class="layout-button layout-button--primary" href="#layout-demo">{% if layout_zh %}探索版图演示{% else %}Explore the layouts{% endif %} <span aria-hidden="true">↗</span></a>
+      <a class="layout-button layout-button--text" href="#about-me">{% if layout_zh %}关于我的研究{% else %}About my research{% endif %} <span aria-hidden="true">↓</span></a>
+    </div>
+    <p class="layout-landing__note"><span aria-hidden="true"></span>{% if layout_zh %}独立工作展示 · 模拟电路版图与设计流程{% else %}Independent work · Analog layouts and design workflows{% endif %}</p>
+  </div>
+  <figure class="layout-landing__figure">
+    <div class="layout-stage__top"><span>LAYOUT STUDIES <span class="layout-stage__divider">/</span> 01</span><button class="layout-motion-toggle" type="button" data-hero-toggle aria-label="{% if layout_zh %}暂停版图动画{% else %}Pause layout animation{% endif %}" hidden><span data-toggle-icon aria-hidden="true">Ⅱ</span> <span data-toggle-label>{% if layout_zh %}暂停{% else %}Pause{% endif %}</span></button></div>
+    <video class="layout-landing__video" data-hero-video loop muted playsinline preload="auto" width="962" height="522" poster="{{ '/assets/media/layout/05-stack3d-nmcnr.webp' | relative_url }}" aria-label="{% if layout_zh %}NMCNR 放大器版图的三维分层动画{% else %}Animated three-dimensional layer stack of the NMCNR amplifier layout{% endif %}">
+      <source src="{{ '/assets/media/layout/05-stack3d-nmcnr.webm' | relative_url }}" type="video/webm">
+      {% if layout_zh %}浏览器无法播放视频，可在下方查看版图演示。{% else %}Explore the layout demonstrations below if your browser cannot play this video.{% endif %}
+    </video>
+    <figcaption class="layout-stage__caption"><div><strong>NMCNR</strong><span>{% if layout_zh %}三维金属层堆叠{% else %}A closer look at the layer stack{% endif %}</span></div><button type="button" class="layout-video-link" data-open-workflow>{% if layout_zh %}完整流程{% else %}Full workflow{% endif %} <span class="layout-video-link__time">1:06</span> <span aria-hidden="true">↗</span></button></figcaption>
+  </figure>
+</section>
+
+<dialog class="layout-dialog" data-workflow-dialog aria-labelledby="workflow-title">
+  <div class="layout-dialog__header"><div><p class="layout-eyebrow">NMCNR / DESIGN WORKFLOW</p><h2 id="workflow-title">{% if layout_zh %}从原理图到版图{% else %}From schematic to layout{% endif %}</h2></div><button type="button" class="layout-dialog__close" data-close-workflow aria-label="{% if layout_zh %}关闭视频{% else %}Close video{% endif %}">×</button></div>
+  <video data-workflow-video controls playsinline preload="none" width="1152" height="750" poster="{{ '/assets/media/layout/workflow-poster.webp' | relative_url }}" data-src="{{ '/assets/media/layout/nmcnr-workflow.mp4' | relative_url }}">{% if layout_zh %}浏览器无法播放此视频。{% else %}Your browser cannot play this video.{% endif %}</video>
+</dialog>
