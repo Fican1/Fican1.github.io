@@ -54,6 +54,13 @@ html[lang="zh-CN"] .layout-landing h1 {
 .layout-motion-toggle { display: inline-flex; align-items: center; gap: 6px; min-height: 30px; padding: 5px 9px; border: 1px solid #ffffff24; border-radius: 5px; background: transparent; color: #b9cdd3; font: inherit; font-size: 10px; letter-spacing: 0; cursor: pointer; }
 .layout-motion-toggle[hidden] { display: none; }
 .layout-landing__video { display: block; width: 100%; height: auto; aspect-ratio: 962/522; object-fit: contain; background: #0a0e17; }
+.layout-process-preview { display: grid; grid-template-columns: minmax(0, 1fr) 135px; align-items: center; }
+.layout-process-preview .layout-landing__video { width: 100%; height: 400px; aspect-ratio: 592/750; }
+.layout-process-steps { display: grid; gap: 30px; margin: 0; padding: 20px 18px 20px 0; list-style: none; }
+.layout-process-steps li { margin: 0; padding: 0; }
+.layout-process-steps span { display: block; margin-bottom: 7px; color: #50bbaa; font: 500 10px/1.3 ui-monospace, SFMono-Regular, Consolas, monospace; }
+.layout-process-steps strong { display: block; color: #d6e4eb; font-size: 12px; font-weight: 650; }
+.layout-process-steps small { display: block; margin-top: 4px; color: #76939e; font-size: 10px; line-height: 1.5; }
 .layout-stage__caption { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin: 0; padding: 16px 18px; border-top: 1px solid #ffffff0e; font-family: inherit; }
 .layout-stage__caption strong { display: block; color: #deecee; font: 700 12px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: 0.05em; }
 .layout-stage__caption div > span { display: block; margin-top: 3px; color: #7f9da8; font-size: 10px; }
@@ -111,6 +118,12 @@ html[lang="zh-CN"] .layout-landing h1 {
   .layout-stage__top { min-height: 40px; padding: 7px 12px; font-size: 8px; }
   .layout-stage__caption { padding: 11px 12px; }
   .layout-stage__caption div > span { font-size: 9px; }
+  .layout-process-preview { display: block; }
+  .layout-process-preview .layout-landing__video { height: 260px; }
+  .layout-process-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding: 14px 12px; border-top: 1px solid #ffffff0e; }
+  .layout-process-steps span { margin-bottom: 4px; font-size: 9px; }
+  .layout-process-steps strong { font-size: 10px; }
+  .layout-process-steps small { font-size: 9px; }
   .layout-eyebrow { margin-bottom: 14px; font-size: 9px; }
   .layout-landing h1, html[lang="zh-CN"] .layout-landing h1 { margin-bottom: 17px; font-size: clamp(29px, 8vw, 40px); }
   .layout-landing__intro { font-size: 13px; }

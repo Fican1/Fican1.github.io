@@ -3,14 +3,14 @@
   const zh = document.documentElement.lang.startsWith('zh');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const views = {
-    '01-flow': ['Build sequence', '构建流程', 'Follow the layout build sequence, from the initial structure to the routed design.', '跟随版图构建顺序，查看初始结构到完成互连的过程。'],
+    '01-flow': ['Placement and routing', '布局与布线流程', 'Follow the layout construction from device placement to interconnect routing.', '从器件布局到互连布线，查看版图的逐步构建过程。'],
     '02-stack': ['Process layers', '工艺层堆叠', 'Reveal the process layers one at a time and examine their contributions to the layout.', '逐层显示工艺层，查看各层在版图结构中的作用。'],
     '03-vias': ['Vias & connections', '过孔与互连', 'Inspect the via structures that connect routing layers.', '查看不同布线层之间的过孔结构与连接关系。'],
-    '04-nets': ['Signal nets', '信号网络', 'Highlight individual nets to trace signal connectivity through the layout.', '逐一高亮信号网络，追踪版图中的连接路径。'],
-    '05-stack3d': ['3D layer stack', '三维分层', 'Separate the process layers to see how the planar layout is organized in space.', '展开工艺层堆叠，查看版图从平面到空间的结构关系。'],
+    '04-nets': ['Routing paths', '布线路径', 'Highlight individual signal nets and follow their routing paths.', '逐一高亮信号网络，查看互连布线的连接路径。'],
+    '05-stack3d': ['Process-layer separation', '工艺层展开示意', 'An exploded view of the process layers in the same planar layout, used to inspect interconnects.', '同一平面版图的工艺层展开视图，用于辅助查看互连关系。'],
     '06-matching': ['Device matching', '器件匹配', 'Examine the placement and grouping of matched devices.', '查看匹配器件的排列方式及分组关系。'],
     '07-zoom': ['Local details', '局部细节', 'Move from the full layout into local geometry and routing details.', '从完整版图逐步放大，查看局部几何结构与布线细节。'],
-    '08-power': ['Power network', '电源网络', 'Trace the power distribution paths across the layout.', '追踪电源在版图中的分布与连接路径。'],
+    '08-power': ['Power routing', '电源布线', 'Trace the power and ground connections across the layout.', '查看版图中的电源与地线连接路径。'],
   };
   const managed = new Map();
   let dialogOpen = false;
@@ -72,7 +72,7 @@
     const label = explorer.querySelector('[data-screen-label]');
     const base = explorer.dataset.mediaBase;
     let circuit = 'nmcnr';
-    let view = '05-stack3d';
+    let view = '01-flow';
     let loaded = '';
     const load = () => {
       const key = `${view}-${circuit}`;
@@ -87,7 +87,8 @@
       explorer.querySelectorAll('[data-view]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
       title.textContent = views[view][zh ? 1 : 0];
       description.textContent = views[view][zh ? 3 : 2];
-      label.textContent = `${circuit.toUpperCase()} / ${view.slice(0, 2)}`;
+      const viewNumber = explorer.querySelector(`[data-view="${view}"] > span`).textContent;
+      label.textContent = `${circuit.toUpperCase()} / ${viewNumber}`;
       video.setAttribute('aria-label', `${circuit.toUpperCase()} · ${title.textContent}`);
       video.poster = `${base}${view}-${circuit}.webp`;
       managed.get(video).userPaused = false;

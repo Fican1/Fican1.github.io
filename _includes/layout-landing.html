@@ -8,15 +8,18 @@
       <a class="layout-button layout-button--primary" href="#layout-demo">{% if layout_zh %}探索版图演示{% else %}Explore the layouts{% endif %} <span aria-hidden="true">↗</span></a>
       <a class="layout-button layout-button--text" href="#about-me">{% if layout_zh %}关于我的研究{% else %}About my research{% endif %} <span aria-hidden="true">↓</span></a>
     </div>
-    <p class="layout-landing__note"><span aria-hidden="true"></span>{% if layout_zh %}独立工作展示 · 模拟电路版图与设计流程{% else %}Independent work · Analog layouts and design workflows{% endif %}</p>
+    <p class="layout-landing__note"><span aria-hidden="true"></span>{% if layout_zh %}独立工作 · 模拟电路布局与布线{% else %}Independent work · Analog placement and routing{% endif %}</p>
   </div>
   <figure class="layout-landing__figure">
-    <div class="layout-stage__top"><span>LAYOUT STUDIES <span class="layout-stage__divider">/</span> 01</span><button class="layout-motion-toggle" type="button" data-hero-toggle aria-label="{% if layout_zh %}暂停版图动画{% else %}Pause layout animation{% endif %}" hidden><span data-toggle-icon aria-hidden="true">Ⅱ</span> <span data-toggle-label>{% if layout_zh %}暂停{% else %}Pause{% endif %}</span></button></div>
-    <video class="layout-landing__video" data-hero-video loop muted playsinline preload="auto" width="962" height="522" poster="{{ '/assets/media/layout/05-stack3d-nmcnr.webp' | relative_url }}" aria-label="{% if layout_zh %}NMCNR 放大器版图的三维分层动画{% else %}Animated three-dimensional layer stack of the NMCNR amplifier layout{% endif %}">
-      <source src="{{ '/assets/media/layout/05-stack3d-nmcnr.webm' | relative_url }}" type="video/webm">
+    <div class="layout-stage__top"><span>PLACEMENT <span class="layout-stage__divider">/</span> ROUTING</span><button class="layout-motion-toggle" type="button" data-hero-toggle aria-label="{% if layout_zh %}暂停版图动画{% else %}Pause layout animation{% endif %}" hidden><span data-toggle-icon aria-hidden="true">Ⅱ</span> <span data-toggle-label>{% if layout_zh %}暂停{% else %}Pause{% endif %}</span></button></div>
+    <div class="layout-process-preview">
+    <video class="layout-landing__video" data-hero-video loop muted playsinline preload="auto" width="592" height="750" poster="{{ '/assets/media/layout/01-flow-nmcnr.webp' | relative_url }}" aria-label="{% if layout_zh %}NMCNR 放大器的布局与布线过程{% else %}Placement and routing sequence of the NMCNR amplifier{% endif %}">
+      <source src="{{ '/assets/media/layout/01-flow-nmcnr.webm' | relative_url }}" type="video/webm">
       {% if layout_zh %}浏览器无法播放视频，可在下方查看版图演示。{% else %}Explore the layout demonstrations below if your browser cannot play this video.{% endif %}
     </video>
-    <figcaption class="layout-stage__caption"><div><strong>NMCNR</strong><span>{% if layout_zh %}三维金属层堆叠{% else %}A closer look at the layer stack{% endif %}</span></div><button type="button" class="layout-video-link" data-open-workflow>{% if layout_zh %}完整流程{% else %}Full workflow{% endif %} <span class="layout-video-link__time">1:06</span> <span aria-hidden="true">↗</span></button></figcaption>
+    <ol class="layout-process-steps" aria-label="{% if layout_zh %}版图构建阶段{% else %}Layout construction stages{% endif %}"><li><span>01</span><strong>{% if layout_zh %}器件布局{% else %}Placement{% endif %}</strong><small>{% if layout_zh %}器件位置与排列{% else %}Device positions{% endif %}</small></li><li><span>02</span><strong>{% if layout_zh %}互连布线{% else %}Signal routing{% endif %}</strong><small>{% if layout_zh %}信号连接路径{% else %}Signal connections{% endif %}</small></li><li><span>03</span><strong>{% if layout_zh %}电源连接{% else %}Power routing{% endif %}</strong><small>{% if layout_zh %}电源与地线{% else %}Supply and ground{% endif %}</small></li></ol>
+    </div>
+    <figcaption class="layout-stage__caption"><div><strong>NMCNR</strong><span>{% if layout_zh %}布局与布线过程{% else %}Placement and routing sequence{% endif %}</span></div><button type="button" class="layout-video-link" data-open-workflow>{% if layout_zh %}完整流程{% else %}Full workflow{% endif %} <span class="layout-video-link__time">1:06</span> <span aria-hidden="true">↗</span></button></figcaption>
   </figure>
 </section>
 

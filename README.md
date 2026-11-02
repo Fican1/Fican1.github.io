@@ -20,7 +20,7 @@ The public Google Scholar profile is [Jintao Li](https://scholar.google.com/cita
 
 The bilingual landing feature and layout explorer use `_includes/layout-landing.html`, `_includes/layout-explorer.html`, `assets/css/layout-showcase.css`, and `assets/js/layout-showcase.js`. Media files live in `assets/media/layout/`: two amplifier circuits, eight looping WebM views per circuit, WebP poster frames, and the full NMCNR MP4 workflow. Only the visible animation loads initially; the full video loads when opened. Autoplay respects reduced-motion preferences, and videos pause when offscreen or when the browser tab is hidden.
 
-The layout work is presented independently of the Analog-IC Copilot and circuit-design agent projects.
+The layout work is presented independently of the Analog-IC Copilot and circuit-design agent projects. Placement and routing are the primary demonstration. The layer-separation view illustrates the process layers of a planar layout; it does not represent stacked dies or 3D integration.
 
 ## Template and license
 

@@ -1,23 +1,23 @@
 {% assign layout_zh = false %}{% if page.lang == 'zh' %}{% assign layout_zh = true %}{% endif %}
 <section class="layout-explorer" id="layout-demo" data-layout-explorer data-media-base="{{ '/assets/media/layout/' | relative_url }}" aria-labelledby="layout-demo-title">
   <header class="layout-explorer__header">
-    <div><p class="project-kicker">{% if layout_zh %}独立工作 · 版图可视化{% else %}Independent work · Layout visualization{% endif %}</p><h2 id="layout-demo-title">{% if layout_zh %}走进模拟电路版图{% else %}Inside the analog layout{% endif %}</h2><p>{% if layout_zh %}两个放大器版图，从工艺层、互连到器件匹配，逐层查看设计细节。{% else %}Two amplifier layouts, examined from process layers and interconnects to device matching.{% endif %}</p></div>
+    <div><p class="project-kicker">{% if layout_zh %}独立工作 · 版图设计流程{% else %}Independent work · Layout design workflow{% endif %}</p><h2 id="layout-demo-title">{% if layout_zh %}模拟电路布局与布线{% else %}Analog placement and routing{% endif %}</h2><p>{% if layout_zh %}从器件布局到信号与电源布线，查看两个放大器版图的构建过程。{% else %}Follow two amplifier layouts from device placement to signal and power routing.{% endif %}</p></div>
     <div class="layout-circuits" role="group" aria-label="{% if layout_zh %}选择电路{% else %}Choose a circuit{% endif %}"><button type="button" data-circuit="nmcnr" aria-pressed="true">NMCNR</button><button type="button" data-circuit="tcfc" aria-pressed="false">TCFC</button></div>
   </header>
   <div class="layout-explorer__body">
     <div class="layout-explorer__media">
-      <div class="layout-explorer__screen"><span class="layout-screen-label" data-screen-label>NMCNR / 05</span><video data-layout-video controls loop muted playsinline preload="none" poster="{{ '/assets/media/layout/05-stack3d-nmcnr.webp' | relative_url }}" width="962" height="750" aria-label="{% if layout_zh %}版图视图演示{% else %}Layout view demonstration{% endif %}">{% if layout_zh %}浏览器无法播放视频。{% else %}Your browser cannot play this video.{% endif %}</video></div>
-      <div class="layout-explorer__caption" aria-live="polite"><h3 data-view-title>{% if layout_zh %}三维分层{% else %}3D layer stack{% endif %}</h3><p data-view-description>{% if layout_zh %}展开工艺层堆叠，查看版图从平面到空间的结构关系。{% else %}Separate the process layers to see how the planar layout is organized in space.{% endif %}</p></div>
+      <div class="layout-explorer__screen"><span class="layout-screen-label" data-screen-label>NMCNR / 01</span><video data-layout-video controls loop muted playsinline preload="none" poster="{{ '/assets/media/layout/01-flow-nmcnr.webp' | relative_url }}" width="962" height="750" aria-label="{% if layout_zh %}版图视图演示{% else %}Layout view demonstration{% endif %}">{% if layout_zh %}浏览器无法播放视频。{% else %}Your browser cannot play this video.{% endif %}</video></div>
+      <div class="layout-explorer__caption" aria-live="polite"><h3 data-view-title>{% if layout_zh %}布局与布线流程{% else %}Placement and routing{% endif %}</h3><p data-view-description>{% if layout_zh %}从器件布局到互连布线，查看版图的逐步构建过程。{% else %}Follow the layout construction from device placement to interconnect routing.{% endif %}</p></div>
     </div>
     <div class="layout-views" role="group" aria-label="{% if layout_zh %}选择版图视图{% else %}Choose a layout view{% endif %}">
-      <button type="button" data-view="01-flow" aria-pressed="false"><span>01</span>{% if layout_zh %}构建流程{% else %}Build sequence{% endif %}</button>
-      <button type="button" data-view="02-stack" aria-pressed="false"><span>02</span>{% if layout_zh %}工艺层堆叠{% else %}Process layers{% endif %}</button>
-      <button type="button" data-view="03-vias" aria-pressed="false"><span>03</span>{% if layout_zh %}过孔与互连{% else %}Vias & connections{% endif %}</button>
-      <button type="button" data-view="04-nets" aria-pressed="false"><span>04</span>{% if layout_zh %}信号网络{% else %}Signal nets{% endif %}</button>
-      <button type="button" data-view="05-stack3d" aria-pressed="true"><span>05</span>{% if layout_zh %}三维分层{% else %}3D layer stack{% endif %}</button>
-      <button type="button" data-view="06-matching" aria-pressed="false"><span>06</span>{% if layout_zh %}器件匹配{% else %}Device matching{% endif %}</button>
-      <button type="button" data-view="07-zoom" aria-pressed="false"><span>07</span>{% if layout_zh %}局部细节{% else %}Local details{% endif %}</button>
-      <button type="button" data-view="08-power" aria-pressed="false"><span>08</span>{% if layout_zh %}电源网络{% else %}Power network{% endif %}</button>
+      <button type="button" data-view="01-flow" aria-pressed="true"><span>01</span>{% if layout_zh %}布局布线流程{% else %}Placement & routing{% endif %}</button>
+      <button type="button" data-view="04-nets" aria-pressed="false"><span>02</span>{% if layout_zh %}布线路径{% else %}Routing paths{% endif %}</button>
+      <button type="button" data-view="06-matching" aria-pressed="false"><span>03</span>{% if layout_zh %}器件匹配{% else %}Device matching{% endif %}</button>
+      <button type="button" data-view="03-vias" aria-pressed="false"><span>04</span>{% if layout_zh %}过孔与互连{% else %}Vias & connections{% endif %}</button>
+      <button type="button" data-view="08-power" aria-pressed="false"><span>05</span>{% if layout_zh %}电源布线{% else %}Power routing{% endif %}</button>
+      <button type="button" data-view="07-zoom" aria-pressed="false"><span>06</span>{% if layout_zh %}局部细节{% else %}Local details{% endif %}</button>
+      <button type="button" data-view="02-stack" aria-pressed="false"><span>07</span>{% if layout_zh %}工艺层显示{% else %}Process layers{% endif %}</button>
+      <button type="button" data-view="05-stack3d" aria-pressed="false"><span>08</span>{% if layout_zh %}工艺层展开示意{% else %}Layer separation{% endif %}</button>
     </div>
   </div>
   <footer class="layout-explorer__footer"><span>{% if layout_zh %}2 个电路 · 8 种视图{% else %}2 circuits · 8 views{% endif %}</span><button type="button" class="layout-video-link" data-open-workflow>{% if layout_zh %}观看 NMCNR 完整流程{% else %}Watch the NMCNR workflow{% endif %} <span class="layout-video-link__time">1:06</span> <span aria-hidden="true">↗</span></button></footer>
