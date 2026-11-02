@@ -6,7 +6,7 @@
 <style>
   @page { size: A4; margin: 12mm 14mm 13mm; }
   * { box-sizing: border-box; }
-  body { margin: 0; color: #152735; font: 9.2pt/1.42 Arial, "Microsoft YaHei", sans-serif; }
+  body { margin: 0; color: #152735; font: 9pt/1.38 Arial, "Microsoft YaHei", sans-serif; }
   h1, h2, h3, p { margin-top: 0; }
   header { display: grid; grid-template-columns: 1fr auto; gap: 16mm; padding-bottom: 4mm; border-bottom: 2px solid #0b6f64; }
   h1 { margin-bottom: 1.5mm; color: #071a2b; font: 700 25pt/1.05 Georgia, serif; letter-spacing: -0.5px; }
@@ -25,8 +25,8 @@
   .date { color: #0b6f64; font-size: 8.5pt; font-weight: 700; }
   .item { margin-bottom: 1.4mm; }
   ol { margin: 0; padding-left: 5.5mm; }
-  li { margin-bottom: 2.2mm; padding-left: 1mm; }
-  .title { color: #071a2b; font-weight: 700; }
+  li { margin-bottom: 2mm; padding-left: 1mm; }
+  .title { text-decoration: none; color: #071a2b; font-weight: 700; }
   .venue { color: #0b6f64; font-size: 8.2pt; font-weight: 700; }
   .authors { color: #536773; font-size: 8.2pt; }
   .award { display: grid; grid-template-columns: 25mm 1fr; gap: 3mm; margin-bottom: 1.7mm; }
@@ -66,66 +66,69 @@
 <section>
   <h2>Education & Research Experience</h2>
   <div class="timeline">
-    <div class="date">2024.09–2027.06</div><div class="item"><strong>PhD Researcher</strong>, Shenzhen Institute for Advanced Study, UESTC. Expected completion: June 2027.</div>
+    <div class="date">2024.09–2027.06</div><div class="item"><strong>PhD Researcher</strong>, Shenzhen Institute for Advanced Study, UESTC. Computer Science and Technology. Expected completion: June 2027.</div>
     <div class="date">2021.09–Present</div><div class="item"><strong>Prof. Yun Li's Research Group</strong>, UESTC. Research on intelligent optimization, especially reinforcement learning and evolutionary methods for multi-objective problems, with applications in analog EDA and large-model post-training.</div>
     <div class="date">2021.09–2024.06</div><div class="item"><strong>MEng, Electronic Information</strong>, Shenzhen Institute for Advanced Study, UESTC.</div>
-    <div class="date">2017.09–2021.06</div><div class="item"><strong>BEng, Optoelectronic Information Science and Engineering</strong>, Guangzhou University.</div>
+    <div class="date">2016.09–2020.06</div><div class="item"><strong>BEng, Optoelectronic Information Science and Engineering</strong>, Guangzhou University.</div>
   </div>
 </section>
 
 <section>
-  <h2>Selected Publications (1–5)</h2>
+  <h2>Selected Publications (1–6)</h2>
   <ol>
     <li><span class="title">Learning from Comparison: Constrained Projection Policy Optimization for Pareto-Front Improvement.</span><br><span class="authors"><strong>Jintao Li</strong>, Maowen Tang, Yongji Long, Weixuan Liu, Yanlang Zheng, Sicheng He, Ao-Jin Li, Shui Yu, Yun Li.</span> <span class="venue">ICML 2026 · CCF-A.</span></li>
-    <li><span class="title">Priority-Based Graph-Enhanced Reinforcement Learning for Robust Analog Circuit Optimization.</span><br><span class="authors"><strong>Jintao Li</strong>, Zhenxin Chen, Sicheng He, Ao-Jin Li, Shui Yu.</span> <span class="venue">AAAI 2026 · CCF-A.</span></li>
     <li><span class="title">Decoupling Analog Circuit Representation from Technology for Behavior-Centric Optimization.</span><br><span class="authors"><strong>Jintao Li</strong>, Haochang Zhi, Jiang Xiao, Keren Zhu, Yun Li.</span> <span class="venue">DAC 2025 · CCF-A / EDA flagship.</span></li>
-    <li><span class="title">Knowledge Transfer Framework for PVT Robustness in Analog Integrated Circuits.</span><br><span class="authors"><strong>Jintao Li</strong>, Yanhan Zeng, Haochang Zhi, Jingci Yang, Weiwei Shan, Yongfu Li, Yun Li.</span> <span class="venue">IEEE TCAS-I 71(5), 2017–2030, 2024.</span></li>
-    <li><span class="title">Multitask Evolution with Problem Reformulation for Global Exploration in Analog Circuit Design.</span><br><span class="authors"><strong>Jintao Li</strong>, Sicheng He, Aojin Li, Shui Yu, Yun Li.</span> <span class="venue">Advanced Engineering Informatics 70, 104195, 2026.</span></li>
+    <li><a class="title" href="https://doi.org/10.1109/TCAD.2026.3733612">AnalogGym-Opt: An LLM-Oriented Optimization Infrastructure for Analog Circuit Sizing with GRPO.</a><br><span class="authors"><strong>Jintao Li</strong>, Haochang Zhi, Yongji Long, Weixuan Liu, Yanhan Zeng, Keren Zhu, Shui Yu, Yun Li.</span> <span class="venue">IEEE TCAD, 2026 · CCF-A.</span></li>
+    <li><a class="title" href="https://doi.org/10.1109/TCAD.2026.3725982">A Behavior-Centric Methodology for High-Performance Amplifier Sizing.</a><br><span class="authors">Haochang Zhi<sup>†</sup>, <strong>Jintao Li</strong><sup>†</sup>, Keren Zhu, Yun Li, Weiwei Shan, Wanyuan Qu.</span> <span class="venue">IEEE TCAD, 2026 · CCF-A.</span></li>
+    <li><a class="title" href="https://doi.org/10.1109/TEVC.2026.3745406">Archive-Protected Survival Selection for Response Evolution in Large Language Model Post-Training.</a><br><span class="authors"><strong>Jintao Li</strong>, Yongji Long, Weixuan Liu, Aojin Li, Yanhan Zeng, Shui Yu, Yun Li.</span> <span class="venue">IEEE TEVC, 2026 · CCF-B.</span></li>
+    <li><span class="title">Priority-Based Graph-Enhanced Reinforcement Learning for Robust Analog Circuit Optimization.</span><br><span class="authors"><strong>Jintao Li</strong>, Zhenxin Chen, Sicheng He, Ao-Jin Li, Shui Yu.</span> <span class="venue">AAAI 2026 · CCF-A.</span></li>
   </ol>
 </section>
 
-<footer>Jintao Li · Curriculum Vitae · Public web edition · Updated July 2026</footer>
+<footer>Jintao Li · Curriculum Vitae · Public web edition · Updated November 2, 2026</footer>
 
 <div class="page-break"></div>
 
 <section style="margin-top:0">
-  <h2>Selected Publications (6–10)</h2>
-  <ol start="6">
-    <li><span class="title">Frequency-Domain Driven Recurrent Attention with Linear Complexity for Time Series Forecasting.</span><br><span class="authors"><strong>Jintao Li</strong>, Hui Deng, Jiang Xiao, Aojin Li, Sichen He, Shui Yu.</span> <span class="venue">ICASSP 2026, Barcelona.</span></li>
+  <h2>Selected Publications (7–11)</h2>
+  <ol start="7">
+    <li><span class="title">Knowledge Transfer Framework for PVT Robustness in Analog Integrated Circuits.</span><br><span class="authors"><strong>Jintao Li</strong>, Yanhan Zeng, Haochang Zhi, Jingci Yang, Weiwei Shan, Yongfu Li, Yun Li.</span> <span class="venue">IEEE TCAS-I 71(5), 2017–2030, 2024.</span></li>
+    <li><span class="title">Multitask Evolution with Problem Reformulation for Global Exploration in Analog Circuit Design.</span><br><span class="authors"><strong>Jintao Li</strong>, Sicheng He, Aojin Li, Shui Yu, Yun Li.</span> <span class="venue">Advanced Engineering Informatics 70, 104195, 2026.</span></li>
     <li><span class="title">AnalogGym: An Open and Practical Testing Suite for Analog Circuit Synthesis.</span><br><span class="authors"><strong>Jintao Li</strong>, Haochang Zhi, Ruiyu Lyu, Wangzhen Li, Zhaori Bi, Keren Zhu, Yanhan Zeng, Weiwei Shan, Changhao Yan, Fan Yang, Yun Li, Xuan Zeng.</span> <span class="venue">ICCAD 2024 · EDA flagship.</span></li>
     <li><span class="title">Multi-Task Evolutionary to PVT Knowledge Transfer for Analog Integrated Circuit Optimization.</span><br><span class="authors"><strong>Jintao Li</strong>, Haochang Zhi, Weiwei Shan, Yongfu Li, Yanhan Zeng, Yun Li.</span> <span class="venue">ICCAD 2023 · EDA flagship.</span></li>
     <li><span class="title">Balancing Objective Optimization and Constraint Satisfaction for Robust Analog Circuit Optimization.</span><br><span class="authors"><strong>Jintao Li</strong>, Haochang Zhi, Jiang Xiao, Yanhan Zeng, Weiwei Shan, Yun Li.</span> <span class="venue">ASP-DAC 2025, 190–196.</span></li>
-    <li><span class="title">Robust Circuit Optimization under PVT Variations via Weight Optimization Problem Reformulation.</span><br><span class="authors"><strong>Jintao Li</strong>, Yongfu Li, Yanhan Zeng.</span> <span class="venue">Expert Systems with Applications 248, 123301, 2024.</span></li>
   </ol>
+  <p class="authors">† Equal contribution (co-first authors).</p>
 </section>
 
 <section>
   <h2>Research Systems</h2>
-  <div class="project"><strong>Analog-IC EDA Software Stack — Lead Developer</strong><p>A mature workflow connecting a server-side optimizer, a 100-GB multimodal circuit database, a lightweight GUI, and industrial simulation tools.</p><div class="facts">3 circuit classes · 4 tapeout validations · 22 topologies · 4 technology nodes</div></div>
-  <div class="project"><strong>Self-Evolving Analog Circuit Design Agent — Ongoing Team Project</strong><p>An agentic framework for specification extraction, behavioral equation derivation and repair, optimizer configuration, simulation execution, human review, and persistent design memory.</p><div class="facts">Document agent · Modeling agent · Evaluation agent · Human-in-the-loop sign-off</div></div>
+  <div class="project"><strong>Analog-IC EDA Software Stack — Lead Developer</strong><p>A mature workflow connecting a server-side optimizer, an approximately 10-GB circuit dataset, a lightweight GUI, and industrial simulation tools.</p><div class="facts">3 circuit classes · 4 tapeout validations · 22 topologies · 4 technology nodes</div></div>
+  <div class="project"><strong>Self-Evolving Analog Circuit Design Agent — Ongoing Team Project</strong><p>An ongoing framework for dynamic agent routing, comparison-based GRPO, constrained policy optimization, trajectory replay, reusable skills, simulation evaluation, and human review.</p><div class="facts">Dynamic agent routing · Comparison feedback · LLM post-training · Design memory</div></div>
   <div class="project"><strong>AnalogGym — Open Benchmark</strong><p>An open testing suite for reproducible evaluation of analog synthesis methods across five circuit categories, multiple process technologies, and both commercial and open-source simulators.</p><div class="facts">Paper: arXiv 2409.08534 · Code: github.com/CODA-Team/AnalogGym</div></div>
 </section>
 
 <section>
   <h2>Honors & Awards</h2>
-  <div class="award"><div class="date">2025</div><div><strong>National Scholarship for Graduate Students</strong>, UESTC.</div></div>
+  <div class="award"><div class="date">2026.10</div><div><strong>National Scholarship for Graduate Students</strong>, UESTC.</div></div>
+  <div class="award"><div class="date">2024–2025</div><div><strong>National Scholarship for Graduate Students</strong>, UESTC.</div></div>
   <div class="award"><div class="date">2025</div><div><strong>CAST Young Elite Scientist Sponsorship Program — Doctoral Track</strong>.</div></div>
   <div class="award"><div class="date">2025</div><div><strong>UESTC Outstanding Student Nominee</strong>, selected among 20 university-wide candidates.</div></div>
   <div class="award"><div class="date">2023–2025</div><div><strong>First-Class Scholarship</strong>, UESTC.</div></div>
-  <div class="award"><div class="date">2023</div><div><strong>Outstanding Graduate Student Scholarship</strong>, UESTC.</div></div>
+  <div class="award"><div class="date">2023–2025</div><div><strong>Outstanding Graduate Student Enterprise Scholarships</strong>, ZTE and BYD, UESTC.</div></div>
   <div class="award"><div class="date">2022</div><div><strong>Second-Class Scholarship</strong>, UESTC.</div></div>
 </section>
 
 <section>
   <h2>Research Links</h2>
   <div class="grid">
-    <div><strong>Google Scholar</strong><br><span style="color:#536773">scholar.google.com · Jintao Li</span></div>
+    <div><strong>Google Scholar</strong><br><a href="https://scholar.google.com/citations?user=UB4DY3EAAAAJ&hl=en" style="color:#536773">scholar.google.com · Jintao Li</a></div>
     <div><strong>ResearchGate</strong><br><span style="color:#536773">researchgate.net/profile/Jintao-Li-17</span></div>
     <div><strong>ORCID</strong><br><span style="color:#536773">0000-0003-0403-6767</span></div>
     <div><strong>GitHub</strong><br><span style="color:#536773">github.com/Fican1</span></div>
   </div>
 </section>
 
-<footer>Jintao Li · Curriculum Vitae · Public web edition · Updated July 2026</footer>
+<footer>Jintao Li · Curriculum Vitae · Public web edition · Updated November 2, 2026</footer>
 </body>
 </html>
